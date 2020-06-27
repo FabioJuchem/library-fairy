@@ -1,0 +1,4 @@
+message:
+  one: one
+  thow: two
+  argument: message with argument - {0}

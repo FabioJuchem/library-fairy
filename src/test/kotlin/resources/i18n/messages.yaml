@@ -1,0 +1,4 @@
+message:
+  one: one default
+  two: two default
+  only.default: message only default
