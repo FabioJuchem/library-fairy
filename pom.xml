@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.libraries</groupId>
 	<artifactId>fairy</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>fairy-library</name>
 	<description>library to get yml messages</description>
 
@@ -36,10 +36,10 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/FabioJuchem/library-fairy.git</url>
-		<connection>scm:git:git@github.com:FabioJuchem/library-fairy.git</connection>
-		<developerConnection>scm:git:git@github.com:FabioJuchem/library-fairy.git</developerConnection>
-		<tag>fairy</tag>
+		<url>git@github.com:FabioJuchem/library-fairy.git</url>
+		<connection>scm:git:https://github.com/FabioJuchem/library-fairy.git</connection>
+		<developerConnection>scm:git:https://github.com/FabioJuchem/library-fairy.git</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
