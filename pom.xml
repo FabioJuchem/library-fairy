@@ -36,7 +36,7 @@
 	</developers>
 
 	<scm>
-		<url>git@github.com:FabioJuchem/library-fairy.git</url>
+		<url>https://github.com/FabioJuchem/library-fairy.git</url>
 		<connection>scm:git:git@github.com:FabioJuchem/library-fairy.git</connection>
 		<developerConnection>scm:git:git@github.com:FabioJuchem/library-fairy.git</developerConnection>
 		<tag>fairy</tag>
