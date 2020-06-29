@@ -14,6 +14,41 @@
 	<name>fairy-library</name>
 	<description>library to get yml messages</description>
 
+	<url>https://github.com/FabioJuchem</url>
+
+	<developers>
+		<developer>
+			<id>fabiojuchem</id>
+			<name>Fabio Vansovis Juchem</name>
+			<email>fabio.juchem@gmail.com</email>
+		</developer>
+		<developer>
+			<id>maikocunha</id>
+			<name>Maiko Cunha</name>
+			<email>mkacunha@gmail.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<url>git@github.com:FabioJuchem/library-fairy.git</url>
+		<connection>scm:git:git@github.com:FabioJuchem/library-fairy.git</connection>
+		<developerConnection>scm:git:git@github.com:FabioJuchem/library-fairy.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype Nexus snapshot repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>sonatype-nexus-staging</id>
+			<name>Sonatype Nexus release repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
 	<properties>
 		<java.version>11</java.version>
 		<kotlin.version>1.3.72</kotlin.version>
