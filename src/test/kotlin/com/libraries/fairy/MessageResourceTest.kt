@@ -160,10 +160,4 @@ internal class MessageResourceTest {
     fun arguments_of_varargs() {
         Assertions.assertArrayEquals(arrayOf("one", "two"), of("one", "two"))
     }
-
-    @Test
-    fun arguments_of_varargs_shouldThrowException_whenArgumentsIsNull() {
-        Assertions.assertThrows(NullPointerException::class.java) { of(ARGUMENTS_NULL) }
-    }
-
 }

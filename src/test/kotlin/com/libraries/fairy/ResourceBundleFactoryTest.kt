@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Test
 import java.util.*
 
-
-internal class ResourceBundleFactoryTest {
+class ResourceBundleFactoryTest {
 
     @Test
     fun resourceBundle_shouldReturnNewFromCache() {
