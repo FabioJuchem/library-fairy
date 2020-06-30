@@ -13,6 +13,7 @@ jobs:
           paths:
             - ~/.m2
           key: circleci-demo-java-spring-{{ checksum "pom.xml" }}
+      - run: mvn clean install -Psign-artifacts
       - run: mvn release:prapare
       - run: mvn release:perform
       - store_test_results:
