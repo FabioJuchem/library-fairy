@@ -13,10 +13,10 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <gpg.homedir>/home/mkacunha/.gnupg</gpg.homedir>
-                <gpg.keyname>D0242320B4F9310E831699DB842B575597A4E0CA</gpg.keyname>
+                <gpg.homedir>/home/circleci/.gnupg</gpg.homedir>
+                <gpg.keyname>{KEYID}</gpg.keyname>
                 <gpg.executable>gpg</gpg.executable>
-                <gpg.passphrase>pcf654!@</gpg.passphrase>
+                <gpg.passphrase>{PASSPHRASE}</gpg.passphrase>
             </properties>
         </profile>
     </profiles>
