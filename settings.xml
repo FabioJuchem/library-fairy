@@ -1,7 +1,7 @@
 <settings>
     <servers>
         <server>
-            <id>ossrh</id>
+            <id>io.github.fabiojuchem</id>
             <username>FabioJuchem</username>
             <password>32687391@Aa123</password>
         </server>
