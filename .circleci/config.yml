@@ -1,0 +1,13 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/openjdk:8-jdk
+        steps:
+          - checkout
+          - run:
+              name: install GnuPg2
+              command: sudo apt-get install gnupg2
+          - run:
+              name: Maven Clean Compile
+              command: "mvn clean compile"
