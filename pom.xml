@@ -169,8 +169,8 @@
 									<goal>sign</goal>
 								</goals>
 								<configuration>
-									<homedir>/home/mkacunha/.gnupg</homedir>
-									<passphrase>pcf654!@</passphrase>
+									<homedir>/Users/Windows/.gnupg</homedir>
+									<passphrase>abnerlaura</passphrase>
 								</configuration>
 							</execution>
 						</executions>
