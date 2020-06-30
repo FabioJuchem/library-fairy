@@ -19,6 +19,7 @@ jobs:
             echo $JIRO_USER
             echo $JIRO_PASSWORD
             echo $KEYID
+      - run: gpg2 --keyserver https://pgp.mit.edu/ --search-keys Fabio Juchem
       - run: gpg --receive-keys $KEYID
       - run: gpg --sign-key $KEYID
       - run: gpg --send-key $KEYID
