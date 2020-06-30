@@ -13,6 +13,11 @@ jobs:
           paths:
             - ~/.m2
           key: circleci-demo-java-spring-{{ checksum "pom.xml" }}
+      - run:
+          name: "Get Enviroenmetn"
+          command: |
+            echo $JIRO_USER
+            echo $JIRO_PASSWORD
       - run: mvn clean install -Psign-artifacts
       - run: mvn release:prapare
       - run: mvn release:perform
