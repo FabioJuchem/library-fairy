@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.libraries</groupId>
 	<artifactId>fairy</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>fairy-library</name>
 	<description>library to get yml messages</description>
 
