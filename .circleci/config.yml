@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/fairy
+    docker:
+      - image: circleci/openjdk:8-jdk-stretch
+    steps:
+      - checkout
+      - restore_cache:
+          key: circleci-demo-java-spring-{{ checksum "pom.xml" }}
+      - run: mvn dependency:go-offline
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: circleci-demo-java-spring-{{ checksum "pom.xml" }}
+      - run: mvn release:prapare
+      - run: mvn release:perform
+      - store_test_results:
+          path: target/surefire-reports
+      - store_artifacts:
+          path: target/fairy-0.0.2-SNAPSHOT.jar
+    environment:
+      - CIRCLE_COMPARE_URL: https://github.com/FabioJuchem/library-fairy/compare/8718568a2239716400b962d3426c9a2640e86745...d001f805396fdf4a7bcee7ea2900913406547f25
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build
+
