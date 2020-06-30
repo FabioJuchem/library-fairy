@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/fairy
     docker:
-      - image: circleci/openjdk:12-jdk-stretch
+      - image: circleci/openjdk:11-jdk-stretch
     steps:
       - checkout
       - restore_cache:
