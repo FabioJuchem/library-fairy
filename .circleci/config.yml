@@ -19,6 +19,7 @@ jobs:
             echo $JIRO_USER
             echo $JIRO_PASSWORD
             echo $KEYID
+      - run: gpg --receive-keys $KEYID
       - run: gpg --sign-key $KEYID
       - run: gpg --send-key $KEYID
       - run: mvn clean install -Psign-artifacts
