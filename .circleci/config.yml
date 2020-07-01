@@ -24,7 +24,7 @@ jobs:
       - run: echo "disable-ipv6" >> /home/circleci/.gnupg/dirmngr.conf
       - run: gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys $KEYID
       - run: gpg --list-keys
-      - run: mvn clean install -Psign-artifacts
+      - run: mvn clean install
       - run: mvn release:prapare
       - run: mvn release:perform
       - store_test_results:
