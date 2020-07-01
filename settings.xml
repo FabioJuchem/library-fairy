@@ -2,8 +2,8 @@
     <servers>
         <server>
             <id>io.github.fabiojuchem</id>
-            <username>$JIRO_USER</username>
-            <password>$JIRO_PASSWORD</password>
+            <username>FabioJuchem</username>
+            <password>32687391@Aa123</password>
         </server>
     </servers>
     <profiles>
@@ -14,9 +14,9 @@
             </activation>
             <properties>
                 <gpg.homedir>/home/circleci/.gnupg</gpg.homedir>
-                <gpg.keyname>$KEYID</gpg.keyname>
+                <gpg.keyname>CD4A706F14C87D0C8F1607108DC15F98158E189E</gpg.keyname>
                 <gpg.executable>gpg</gpg.executable>
-                <gpg.passphrase>$PASSPHRASE</gpg.passphrase>
+                <gpg.passphrase>abnerlaura</gpg.passphrase>
             </properties>
         </profile>
     </profiles>

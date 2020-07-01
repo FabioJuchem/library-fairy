@@ -170,7 +170,7 @@
 								</goals>
 								<configuration>
 									<homedir>/home/circleci/.gnupg</homedir>
-									<passphrase>$PASSPHRASE</passphrase>
+									<passphrase>abnerlaura</passphrase>
 								</configuration>
 							</execution>
 						</executions>
