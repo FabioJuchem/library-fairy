@@ -13,6 +13,9 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
+                <gpg.homedir>/home/circleci/.gnupg</gpg.homedir>
+                <gpg.keyname>CD4A706F14C87D0C8F1607108DC15F98158E189E</gpg.keyname>
+                <gpg.executable>gpg</gpg.executable>
                 <gpg.passphrase>abnerlaura</gpg.passphrase>
             </properties>
         </profile>
