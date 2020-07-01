@@ -20,7 +20,8 @@ jobs:
             echo $JIRO_PASSWORD
             echo $KEYID
             echo $KEY_SET
-      - run: gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys $KEYID
+      - run: apt install -y gnupg2
+      - run: gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys $KEYID
       - run: mvn clean install -Psign-artifacts
       - run: mvn release:prapare
       - run: mvn release:perform
