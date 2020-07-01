@@ -169,7 +169,7 @@
 									<goal>sign</goal>
 								</goals>
 								<configuration>
-									<homedir>/Users/Windows/.gnupg</homedir>
+									<homedir>/home/circleci/.gnupg</homedir>
 									<passphrase>abnerlaura</passphrase>
 								</configuration>
 							</execution>
