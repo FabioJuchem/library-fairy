@@ -14,13 +14,13 @@ jobs:
             - ~/.m2
           key: circleci-demo-java-spring-{{ checksum "pom.xml" }}
       - run:
-          name: "Get Enviroenmetn"
+          name: "Get Enviroment"
           command: |
             echo $JIRO_USER
             echo $JIRO_PASSWORD
             echo $KEYID
             echo $KEY_SET
-      - run: gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys $KEY_SET
+      - run: gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys $KEYID
       - run: mvn clean install -Psign-artifacts
       - run: mvn release:prapare
       - run: mvn release:perform
