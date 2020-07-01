@@ -8,9 +8,9 @@
     </servers>
     <profiles>
         <profile>
-            <id>sign</id>
+            <id>ossrh</id>
             <activation>
-                <activeByDefault>false</activeByDefault>
+                <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
                 <gpg.defaultKeyring>false</gpg.defaultKeyring>
