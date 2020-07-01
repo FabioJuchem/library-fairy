@@ -16,9 +16,9 @@ jobs:
       - run:
           name: "Get Enviroenmetn"
           command: |
-            echo $JIRO_USER
-            echo $JIRO_PASSWORD
-            echo $KEYID
+            echo $JIRO_USER |
+            echo $JIRO_PASSWORD |
+            echo $KEYID |
       - run: gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys $KEYID
       - run: mvn clean install -Psign-artifacts
       - run: mvn release:prapare
