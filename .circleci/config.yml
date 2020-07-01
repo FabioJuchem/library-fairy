@@ -20,7 +20,8 @@ jobs:
             echo $JIRO_PASSWORD
             echo $KEYID
             echo $KEY_SET
-      - run: apt install -y gnupg2
+      - run: mkdir ~/.gnupg
+      - run: echo "disable-ipv6" >> home/circleci/.gnupg/dirmngr.conf
       - run: gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys $KEYID
       - run: mvn clean install -Psign-artifacts
       - run: mvn release:prapare
