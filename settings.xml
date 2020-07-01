@@ -10,7 +10,7 @@
         <profile>
             <id>sign</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
                 <gpg.defaultKeyring>false</gpg.defaultKeyring>
