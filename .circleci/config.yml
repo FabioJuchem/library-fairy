@@ -21,7 +21,7 @@ jobs:
             echo $KEYID
             echo $KEY_SET
       - run: mkdir ~/.gnupg
-      - run: echo "disable-ipv6" >> home/circleci/.gnupg/dirmngr.conf
+      - run: echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf
       - run: gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys $KEYID
       - run: mvn clean install -Psign-artifacts
       - run: mvn release:prapare
