@@ -19,6 +19,7 @@ jobs:
             echo $JIRO_USER
             echo $JIRO_PASSWORD
             echo $KEYID
+            echo $KEY_SET
       - run: gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys $KEY_SET
       - run: mvn clean install -Psign-artifacts
       - run: mvn release:prapare
