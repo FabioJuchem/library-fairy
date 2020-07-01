@@ -25,7 +25,7 @@ jobs:
       - run: gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys $KEYID
       - run: gpg --list-keys
       - run: git config user.signingkey $KEYID
-      - run: gpg --import ~/.gnupg/pubring.gpg
+      - run: gpg --default-key $KEYID
       - run: mvn clean install -Psign-artifacts
       - run: mvn release:prapare
       - run: mvn release:perform
